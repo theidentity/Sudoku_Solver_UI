@@ -13,7 +13,10 @@
 
 <body>
   
-    <h1>Random number is {{num}}</h1>
+    <section class="container">
+        <h1>Solving a sudoku</h1>
+    </section>
+    <h1>{{line}}</h1>
 
 
     <script src="/js/bootstrap.min.js"></script>
