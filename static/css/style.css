@@ -1,9 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-body{
-    font-family: 'Titillium Web', sans-serif!important;
-}
-*/
-
 @font-face {
   font-family: 'Titillium Web';
   src: url('/fonts/TitilliumWeb-Regular.ttf');
@@ -14,74 +8,79 @@ body{
     font-family: 'Titillium Web', sans-serif!important;
 }
 
-.heading{
+.h1{
     font-family: 'Titillium Web', sans-serif!important;
+    font-size: x-large;
 }
 
-.hide {
-    visibility: hidden;
+.pad-mar{
+	padding: 2em;
+	margin:2em;
 }
 
-.question-box {
-    width: 100%;
-    min-height: 150px;
-    padding-top: 1em;
-}
-
-.question{
-    font-size: xx-large;
-    font-family: 'Titillium Web', sans-serif!important;
-}
-
-.answer-box {
-    width: 100%;
-    min-height: 50px;
-    padding-bottom: 1em;
+.cell{
+	padding: 5px;
+	height: 50px;
+	width: 50px;
 }
 
 
-.vertical-space {
-    padding-top: 1em;
-    margin-top: 2em;
+
+table {
+  margin:1em auto;
+}
+td {
+  height:30px;
+  width:30px;
+  border:1px solid black;
+  text-align:center;
+  color: white;
+  font-style: bolder;
+}
+td:first-child {
+  border-left:solid black;
+}
+td:nth-child(3n) {
+  border-right:solid black ;
+}
+tr:first-child {
+  border-top:solid black;
+}
+tr:nth-child(3n) td {
+  border-bottom:solid black ;
 }
 
-.pad {
-    padding: 1em;
+.c1{
+	background-color: hsl(0,100%,50%);
 }
 
-.heading-nav {
-    background: #f46524;
-    width: 5px;
-    position: fixed;
-    border-radius: 0;
-    height: 100%;
+.c2{
+	background-color: hsl(40,100%,50%);
+}
+.c3{
+	background-color: hsl(80,100%,50%);
 }
 
-.heading-bar {
-    padding: 2em;
+.c4{
+	background-color: hsl(120,100%,50%);
 }
 
-.card-min-height{
-    min-height:250px;
+.c5{
+	background-color: hsl(160,100%,50%);
 }
 
-.card-footer-min-height{
-    min-height:200px;
+.c6{
+	background-color: hsl(200,100%,50%);
 }
 
-.inner-pad{
-    padding:7px;
+.c7{
+	background-color: hsl(240,100%,50%);
 }
 
-.margin-left{
-    margin-left: 10%;
+.c8{
+	background-color: hsl(280,100%,50%);
 }
 
-.no-margin{
-    margin : -6px;
-    padding: 0px;
-}
-
-.qn-ans-box{
-    padding: 5em;
+.c9{
+	background-color: hsl(320,100%,50%);
 }
