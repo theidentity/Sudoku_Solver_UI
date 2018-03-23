@@ -38,7 +38,7 @@ def hello():
 		if '*' in content:
 			return complete()
 		else:
-			if k%5 == 0:
+			if k%1 == 0:
 				board = terminal.prepareDict(content)
 				return template('sudoku',dict(board))
 
