@@ -32,9 +32,24 @@ def hello():
 	global process
 
 	content = ""
-	while '*' not in content:
+	while True:
 		content = terminal.getContent(process)
-		return dict(line=content)
+		if '*' in content:
+			break
+		board = terminal.prepareDict(content)
+		return dict(board)
+	
+	return complete()
+
+@route("/complete")
+@view("complete")
+def complete():
+		global process
+
+		content = terminal.getContent(process)
+		board = terminal.prepareDict(content)
+		terminal.terminate(process)
+		return dict(board)
 
 # -------------------MAIN START----------------------------
 if __name__ == "__main__":

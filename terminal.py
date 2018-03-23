@@ -20,3 +20,18 @@ def getContent(process):
 	line = process.stdout.readline()
 	return line
 		
+def prepareDict(line):
+	numbers = line.split(',')
+	numbers = [x.replace('0',' ') for x in numbers]
+	board = {}
+
+	k = 0
+	for i in range(9):
+		for j in range(9):
+			name = ''.join(['c',str(i),str(j)])
+			board[name] = numbers[k]
+			k+=1
+
+	return board
+
+

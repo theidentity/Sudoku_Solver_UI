@@ -115,3 +115,4 @@ if __name__ == '__main__':
 	s.solve()
 	# s.printBoard(s.solvedBoard)
 	s.check()
+	s.debug()
