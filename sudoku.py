@@ -28,8 +28,8 @@ class Sudoku(object):
 		board = self.board
 		numbers = board.flatten()
 		numbers = [str(x).replace('0',' ') for x in numbers]
-		print numbers
-
+		return numbers
+		
 	# -------------------SOLVING-------------------
 	def fillNext(self,board):
 		X,Y = np.where(board==0)
@@ -97,8 +97,8 @@ class Sudoku(object):
 			print "incorrect solution"
 
 
-s = Sudoku('003020600900305001001806400008102900700000008006708200002609500800203009005010300')
-s.printBoard(s.board)
-s.solve()
-s.printBoard(s.solvedBoard)
-s.check()
+# s = Sudoku('003020600900305001001806400008102900700000008006708200002609500800203009005010300')
+# s.printBoard(s.board)
+# s.solve()
+# s.printBoard(s.solvedBoard)
+# s.check()

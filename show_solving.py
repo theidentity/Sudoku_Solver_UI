@@ -70,9 +70,12 @@ class Solving_Sudoku(object):
 			self.debug()
 			if self.isValidInsertion(i,j,n):
 				self.board[i][j] = n
+				self.debug()
+
 				if self.solveBoard(i,j):
 					return True
 				self.board[i][j]=0
+				self.debug()
 
 		return False
 
@@ -101,9 +104,9 @@ class Solving_Sudoku(object):
 
 	def check(self):
 		if self.checkSolution():
-			print "correct"
+			print "*correct*"
 		else:
-			print "incorrect solution"
+			print "*incorrect solution*"
 
 
 if __name__ == '__main__':
@@ -111,4 +114,4 @@ if __name__ == '__main__':
 	s.show_solving = True
 	s.solve()
 	# s.printBoard(s.solvedBoard)
-	# s.check()
+	s.check()
