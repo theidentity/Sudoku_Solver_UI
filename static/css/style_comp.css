@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('/fonts/TitilliumWeb-Regular.ttf');
+}
+
+
+.body{
+    font-family: 'Titillium Web', sans-serif!important;
+}
+
+.h1{
+    font-family: 'Titillium Web', sans-serif!important;
+    font-size: x-large;
+}
+
+.pad-mar{
+	padding: 2em;
+	margin:2em;
+}
+
+.cell{
+	padding: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+
+
+table {
+  margin:1em auto;
+}
+td {
+  height:30px;
+  width:30px;
+  border:1px solid black;
+  text-align:center;
+  color: black;
+  font-style: bolder;
+}
+td:first-child {
+  border-left:solid black;
+}
+td:nth-child(3n) {
+  border-right:solid black ;
+}
+tr:first-child {
+  border-top:solid black;
+}
+tr:nth-child(3n) td {
+  border-bottom:solid black ;
+}
+ 

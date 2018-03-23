@@ -27,8 +27,6 @@ __license__ = 'MIT'
 # the actual call to _main() is at the end of the file.
 
 
-print '*********USING INTERNAL BOTTLE**************'
-
 def _cli_parse(args):  # pragma: no coverage
     from argparse import ArgumentParser
 

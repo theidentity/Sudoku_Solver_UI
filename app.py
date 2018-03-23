@@ -27,29 +27,29 @@ process = terminal.start()
 
 
 @route("/")
-@view("sudoku")
 def hello():
 	global process
 
 	content = ""
+	k = 0
 	while True:
+		k += 1
 		content = terminal.getContent(process)
 		if '*' in content:
-			break
-		board = terminal.prepareDict(content)
-		return dict(board)
-	
-	return complete()
+			return complete()
+		else:
+			if k%5 == 0:
+				board = terminal.prepareDict(content)
+				return template('sudoku',dict(board))
+
 
 @route("/complete")
-@view("complete")
 def complete():
 		global process
-
 		content = terminal.getContent(process)
 		board = terminal.prepareDict(content)
 		terminal.terminate(process)
-		return dict(board)
+		return template('complete',dict(board))
 
 # -------------------MAIN START----------------------------
 if __name__ == "__main__":
@@ -64,5 +64,6 @@ if __name__ == "__main__":
 	port=port,
 	debug=True,
 	reloader = True
+	# quiet = True
 	)
 # -------------------MAIN END----------------------------
