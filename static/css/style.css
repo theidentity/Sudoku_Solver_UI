@@ -1,0 +1,87 @@
+/*@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body{
+    font-family: 'Titillium Web', sans-serif!important;
+}
+*/
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('/fonts/TitilliumWeb-Regular.ttf');
+}
+
+
+.body{
+    font-family: 'Titillium Web', sans-serif!important;
+}
+
+.heading{
+    font-family: 'Titillium Web', sans-serif!important;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.question-box {
+    width: 100%;
+    min-height: 150px;
+    padding-top: 1em;
+}
+
+.question{
+    font-size: xx-large;
+    font-family: 'Titillium Web', sans-serif!important;
+}
+
+.answer-box {
+    width: 100%;
+    min-height: 50px;
+    padding-bottom: 1em;
+}
+
+
+.vertical-space {
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.heading-nav {
+    background: #f46524;
+    width: 5px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.heading-bar {
+    padding: 2em;
+}
+
+.card-min-height{
+    min-height:250px;
+}
+
+.card-footer-min-height{
+    min-height:200px;
+}
+
+.inner-pad{
+    padding:7px;
+}
+
+.margin-left{
+    margin-left: 10%;
+}
+
+.no-margin{
+    margin : -6px;
+    padding: 0px;
+}
+
+.qn-ans-box{
+    padding: 5em;
+}
